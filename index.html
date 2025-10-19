@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Energy Company</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate-distance.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar p-0 navbar-light bg-white fixed-top shadow-sm">
+    <div class="container px-4">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo.jpg" alt="Logo" class="logo-img">
+        </a>
+        
+        <!-- Hamburger Button -->
+        <button class="sidebar-toggle" id="sidebarToggle" type="button">
+            <i class="fas fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- Sidebar Overlay -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- Sidebar Navigation -->
+<div class="sidebar" id="sidebar">
+    <!-- Close Button -->
+    <button class="sidebar-close" id="sidebarClose">
+        <i class="fas fa-times"></i>
+    </button>
+    
+    <!-- Sidebar Content -->
+    <div class="sidebar-content">
+        <!-- Optional: Logo in Sidebar -->
+        <div class="sidebar-logo">
+            <img src="img/logo.jpg" alt="Logo" >
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a class="sidebar-nav-link" href="#home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="sidebar-nav-link" href="#about">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="sidebar-nav-link" href="#services">
+                    <i class="fas fa-cog"></i>
+                    <span>Services</span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a class="sidebar-nav-link" href="#contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+        
+        <!-- Optional: Social Links -->
+        <div class="sidebar-social">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Hero Section -->
+<!-- Hero Section -->
+<section class="hero-section" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row pt-lg-5 justify-content-center min-vh-100">
+            <div class="col-lg-9 pt-lg-5">
+                <div class="hero-wrapper mt-lg-5">
+                    <!-- Orange Background Bar -->
+                    <div class="hero-orange-bg" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="900"></div>
+                    
+                    <!-- White Content Card -->
+                    <div class="hero-content" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="500">
+                        <div class="orange-accent-bar"></div>
+                        <h1 class="hero-title">
+                            A Leader in Solar
+                        </h1>
+                        <p class="hero-description">
+                            Industry-leading products and customer service worldwide, with a demonstrated commitment to sustainability.
+                        </p>
+                        <p class="image-credit">
+                            Image from <a href="#" class="text-dark text-decoration-underline">Freepik</a>
+                        </p>
+                        <a href="#contact" class="btn btn-custom">
+                            CONTACT US
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+ <!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <div class="row pb-5 g-5">
+            <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="1750" data-aos-delay="250">
+                <div class="feature-card">
+                    <h3 class="feature-title">Why Solar</h3>
+                    <p class="feature-description">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="1750" data-aos-delay="250">
+                <div class="feature-card">
+                    <h3 class="feature-title">How It works</h3>
+                    <p class="feature-description">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6" data-aos="flip-up" data-aos-duration="1750" data-aos-delay="250">
+                <div class="feature-card">
+                    <h3 class="feature-title">Benefits</h3>
+                    <p class="feature-description">
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+           <div class="energy-header"  >
+            <div class="container">
+                <div data-aos="fade-left" data-aos-duration="1000">
+
+                    <h2 class="energy-title">Energy Freedom with<br>Solar and Storage</h2>
+                    <p class="energy-credit">Image from <a href="#" class="text-white text-decoration-underline">Freepik</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Energy Freedom Section -->
+<section class="energy-section">
+    <div class="container-fluid p-0">
+        <!-- Orange Header Area -->
+        <!-- <div class="energy-header"  >
+            <div class="container">
+                <div data-aos="fade-left" data-aos-duration="1000">
+
+                    <h2 class="energy-title">Energy Freedom with<br>Solar and Storage</h2>
+                    <p class="energy-credit">Image from <a href="#" class="text-white text-decoration-underline">Freepik</a></p>
+                </div>
+            </div>
+        </div> -->
+        
+        <!-- Image and Cards Container -->
+        <div class="energy-content">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-10">
+                        <!-- Main Image -->
+                        <div class="energy-image-wrapper" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                            <img src="https://images.unsplash.com/photo-1559302504-64aae6ca6b6d?q=80&w=2070" 
+                                 alt="Solar Engineer" 
+                                 class="energy-image">
+                        </div>
+                        
+                        <!-- Service Cards Row -->
+                     <div class="services-cards-row">
+    <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="200">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="img/1.png" height="74" width="74" alt="Inverter Inspection">
+                </div>
+                <h4 class="service-name">Inverter<br>inspection</h4>
+            </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="250">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="img/2.png" height="74" width="74" alt="Complete Diagnostics">
+                </div>
+                <h4 class="service-name">Complete<br>Diagnostics</h4>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="200">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="img/3.png" height="74" width="74" alt="Expert Solar Panel Repair">
+                </div>
+                <h4 class="service-name">Expert Solar<br>Panel Repair</h4>
+            </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-6" data-aos="rotate-in" data-aos-duration="1500" data-aos-delay="750">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="img/4.png" height="74" width="74" alt="Updates & Monitoring">
+                </div>
+                <h4 class="service-name">Updates &<br>Monitoring</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Solutions Section -->
+<section class="solutions-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="section-title">Simplified project development<br>for a complex world</h2>
+        </div>
+        
+        <!-- Solutions Cards -->
+        <div class="row g-4 justify-content-center">
+            <!-- Residential Solutions -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="solution-card p-3">
+                    <div class="solution-image-wrapper"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                        <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072" 
+                             alt="Residential Solutions" 
+                             class="solution-image">
+                    </div>
+                    <div class="solution-content">
+                        <h3 class="solution-title">Residential Solutions</h3>
+                        <p class="solution-description">
+                            Save on your electricity bills, reduce your carbon footprint and increase the value of your home.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="solution-link">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Utility-Scale Solutions -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="solution-card p-3">
+                    <div class="solution-image-wrapper"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                        <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072" 
+                             alt="Utility-Scale Solutions" 
+                             class="solution-image">
+                    </div>
+                    <div class="solution-content">
+                        <h3 class="solution-title">Utility-Scale Solutions</h3>
+                        <p class="solution-description">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="solution-link">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Commercial Solutions -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="solution-card p-3">
+                    <div class="solution-image-wrapper"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                        <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=2074" 
+                             alt="Commercial Solutions" 
+                             class="solution-image">
+                    </div>
+                    <div class="solution-content">
+                        <h3 class="solution-title">Commercial Solutions</h3>
+                        <p class="solution-description">
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.
+                        </p>
+                        <div class="d-flex justify-content-center">
+                            <a href="#" class="solution-link">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Image Credit -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-duration="1000">
+            <p class="image-source">
+                Images from <a href="#" class="text-dark text-decoration-underline">Freepik</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Project Development Section -->
+<section class="project-development-section">
+    <div class="container-fluid p-0">
+        <!-- Section Header -->
+        <div class="development-header" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="container text-center">
+                <h2 class="development-title">Make solar project development<br>easier from start to finish</h2>
+                <p class="development-subtitle">Our Company offer unprecedented value, reliability, and support to project partners.</p>
+            </div>
+        </div>
+        
+        <!-- Row 1: Image Left, Text Right -->
+        <div class="row g-0">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="feature-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2072" 
+                         alt="Solar Installation" 
+                         class="feature-image">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center" >
+                <div class="feature-text-content light-bg">
+                    <h3 class="feature-heading">Reduce your carbon footprint</h3>
+                    <p class="feature-text">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="feature-credit">Image by <a href="#" class="text-dark text-decoration-underline">Freepik</a></p>
+                      <div class="d-flex mb-4">
+                            <a href="#" class="solution-link">MORE</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Row 2: Text Left (Orange), Image Right -->
+        <div class="row g-0">
+            <div class="col-lg-6 d-flex align-items-center order-lg-1 order-2" >
+                <div class="feature-text-content orange-bg">
+                    <h3 class="feature-heading text-white">Save on electricity bills</h3>
+                    <p class="feature-text text-white">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="feature-credit text-white">Image by <a href="#" class="text-white text-decoration-underline">Freepik</a></p>
+                     <div class="d-flex mb-4">
+                            <a href="#" class="solution-link text-white">MORE</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-2 order-1" data-aos="fade-left" data-aos-duration="1000">
+                <div class="feature-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=2072" 
+                         alt="Solar Panel Installation" 
+                         class="feature-image">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Row 3: Image Left, Text Right (Black) -->
+        <div class="row g-0">
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="feature-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=2074" 
+                         alt="Solar Installation Worker" 
+                         class="feature-image">
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center" >
+                <div class="feature-text-content black-bg">
+                    <h3 class="feature-heading text-white">Increase property value</h3>
+                    <p class="feature-text text-white">
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p class="feature-credit text-white">Image by <a href="#" class="text-white text-decoration-underline">Freepik</a></p>
+                     <div class="d-flex mb-4">
+                            <a href="#" class="solution-link text-white">MORE</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Solar Panels Section -->
+<section class="solar-panels-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="panels-section-title">Why we should be greening our<br>homes with plants</h2>
+            <p class="panels-section-description">
+                Solar panel module series provides unparalleled value, aesthetics, and reliability for homeowners while offering layout flexibility, several mounting options, and widespread component compatibility for installers.
+            </p>
+        </div>
+        
+     <!-- Solar Panel Cards -->
+<div class="row g-4 justify-content-center">
+    <!-- Solar Panel 1 -->
+    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+        <div class="panel-card p-2 ">
+            <div class="panel-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800" 
+                     alt="Solar Panel 1" 
+                     class="panel-card-image">
+            </div>
+            <div class="panel-card-content" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="600">
+                <h3 class="panel-card-title">Solar Panel 1</h3>
+                <a href="#" class="btn btn-panel-view">VIEW DETAILS</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Solar Panel 2 -->
+    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+        <div class="panel-card p-2 ">
+            <div class="panel-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800" 
+                     alt="Solar Panel 2" 
+                     class="panel-card-image">
+            </div>
+            <div class="panel-card-content" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="600">
+                <h3 class="panel-card-title">Solar Panel 2</h3>
+                <a href="#" class="btn btn-panel-view">VIEW DETAILS</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Solar Panel 3 -->
+    <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+        <div class="panel-card p-2 ">
+            <div class="panel-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?q=80&w=800" 
+                     alt="Solar Panel 3" 
+                     class="panel-card-image">
+            </div>
+            <div class="panel-card-content" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="600">
+                <h3 class="panel-card-title">Solar Panel 3</h3>
+                <a href="#" class="btn btn-panel-view">VIEW DETAILS</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Learn More Button -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+            <a href="#" class="btn btn-learn-more">LEARN MORE</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Energy Storage Section -->
+<section class="energy-storage-section ">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Left Column - Title -->
+            <div class="col-lg-3" data-aos="fade-right" data-aos-duration="1000">
+                <h2 class="storage-title">Energy Freedom with Solar and Storage</h2>
+            </div>
+            
+            <!-- Middle Column - Orange Divider & Text -->
+            <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="storage-content-wrapper">
+                    <div class="orange-divider"></div>
+                    <div class="storage-text-content">
+                        <p class="storage-description">
+                            Vulputate dignissim suspendisse in est ante in nibh mauris. Neque aliquam vestibulum morbi blandit cursus risus. Nisi est sit amet facilisis. Volutpat commodo sed egestas egestas. Id leo in vitae turpis massa sed elementum tempus. Non curabitur gravida arcu ac tortor dignissim convallis aenean.
+                        </p>
+                        <p class="storage-credit">
+                            Image by <a href="#" class="text-dark text-decoration-underline">Freepik</a>
+                        </p>
+                        <a href="#contact" class="btn btn-custom justify-content-end">
+                            CONTACT US
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column - Image -->
+            <div class="col-lg-3" data-aos="rotate-in" data-aos-duration="1000" data-aos-delay="400">
+                <div class="storage-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1000" 
+                         alt="Solar Energy Storage" 
+                         class="storage-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Call to Action Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-box" data-aos="zoom-in" data-aos-duration="1000">
+            <h2 class="cta-title">Help change the world</h2>
+            <p class="cta-description">
+                Help save the environment and make the switch to solar. Find out which Trina Solar products are perfect for your home, business or project.
+            </p>
+            <a href="#contact" class="btn btn-cta">FIND OUT MORE</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact & FAQ Section -->
+<section class="contact-faq-section">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <!-- Left Column - Contact Form -->
+            <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+                <div class="contact-form-wrapper">
+                    <h2 class="contact-title">Get In Touch</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control contact-input" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control contact-input" placeholder="Enter a valid email address" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control contact-textarea" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-submit-form">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Right Column - FAQ Accordion -->
+            
+<div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+    <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item-card">
+            <button class="faq-question" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <span>Phasellus sed efficitur dolor?</span>
+                <i class="fas fa-play faq-icon"></i>
+            </button>
+            <div id="faq1" class="collapse show">
+                <div class="faq-answer">
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien. Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit amet.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="faq-item-card">
+            <button class="faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <span>Quisque fringilla sit amet dolor?</span>
+                <i class="fas fa-play faq-icon"></i>
+            </button>
+            <div id="faq2" class="collapse">
+                <div class="faq-answer">
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="faq-item-card">
+            <button class="faq-question collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <span>Aliquam et sem odio?</span>
+                <i class="fas fa-play faq-icon"></i>
+            </button>
+            <div id="faq3" class="collapse">
+                <div class="faq-answer">
+                    <p>Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer-section">
+    <div class="container text-center">
+        <p class="footer-text">Sample text. Click to select the Text Element.</p>
+    </div>
+</footer>
+
+<!-- Sub Footer -->
+<div class="sub-footer">
+    <div class="container text-center">
+        <p class="sub-footer-text">
+            This site was created with the <a href="#" class="sub-footer-link">Nicepage</a>
+        </p>
+    </div>
+</div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

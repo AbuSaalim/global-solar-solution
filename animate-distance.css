@@ -1,0 +1,71 @@
+/* Custom AOS Animations with Longer Distance */
+
+/* Fade Up - Longer Distance */
+[data-aos="fade-up"] {
+    transform: translate3d(0, 150px, 0);  /* Default is 100px */
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Fade Down - Longer Distance */
+[data-aos="fade-down"] {
+    transform: translate3d(0, -250px, 0);  /* Default is -100px */
+}
+
+[data-aos="fade-down"].aos-animate {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Fade Right - Longer Distance */
+[data-aos="fade-right"] {
+    transform: translate3d(-250px, 0, 0);  /* Default is -100px */
+}
+
+[data-aos="fade-right"].aos-animate {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Fade Left - Longer Distance */
+[data-aos="fade-left"] {
+    transform: translate3d(250px, 0, 0);  /* Default is 100px */
+}
+
+[data-aos="fade-left"].aos-animate {
+    transform: translate3d(0, 0, 0);
+}
+
+/* Zoom In - More Scale */
+[data-aos="zoom-in"] {
+    transform: scale(0.5);  /* Default is 0.6 */
+}
+
+[data-aos="zoom-in"].aos-animate {
+    transform: scale(1);
+}
+
+/* Flip Up - Longer Distance */
+[data-aos="flip-up"] {
+    transform: perspective(2500px) rotateX(-100deg);  /* Default is -100deg */
+}
+
+[data-aos="flip-up"].aos-animate {
+    transform: perspective(2500px) rotateX(0);
+}
+
+
+
+
+/* Custom Rotate In Animation - 180 degree rotation */
+[data-aos="rotate-in"] {
+    opacity: 0;
+    transform: translate(0px, 0px) rotate(180deg) scale(1);
+    transition-property: transform, opacity;
+}
+
+[data-aos="rotate-in"].aos-animate {
+    opacity: 1;
+    transform: translate(0px, 0px) rotate(0deg) scale(1);
+}
+
